@@ -46,23 +46,5 @@ public class Main
 		{
 			System.out.println(wordsArr[i]);
 		}
-
-		// for (int i = 0; i < 2; i++)
-		// {
-		// 	for (String w : wordsHashMap.keySet())
-		// 	{
-		// 		int highestTotal = 0;
-		// 		String highestWord = "";
-
-		// 		if (wordsHashMap.get(w) > highestTotal)
-		// 		{
-		// 			highestTotal = wordsHashMap.get(w);
-		// 			highestWord = w;
-		// 		}
-
-		// 		System.out.println("Word: " + highestWord + " ----- Total: " + highestTotal);
-		// 		wordsHashMap.remove(highestWord);
-		// 	}
-		// }
 	}
 }
