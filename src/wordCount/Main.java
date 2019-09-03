@@ -28,10 +28,23 @@ public class Main
 			}
 		});
 
+		String[] wordsArr = new String[50];
+
+		System.out.println("**** Top 50 Words: Sorted by Word Count ****");
 		for (int i = 1; i <= 50; i++)
 		{
 			HashMap.Entry<String, Integer> t = sortedMap.get(sortedMap.size() - i);
 			System.out.println(i + ") Word: " + t.getKey() + " ----- Total: " + t.getValue());
+			wordsArr[i - 1] = t.getKey();
+		}
+
+		System.out.println();
+
+		System.out.println("**** Top 50 Words: Sorted Alphabetically ****");
+		Arrays.sort(wordsArr);
+		for (int i = 0; i < wordsArr.length; i++)
+		{
+			System.out.println(wordsArr[i]);
 		}
 
 		// for (int i = 0; i < 2; i++)
